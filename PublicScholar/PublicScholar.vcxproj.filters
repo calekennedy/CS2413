@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Bibliographic">
+      <UniqueIdentifier>{b6cd731a-57f0-49a1-8a08-8166faf21aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bibliographic">
+      <UniqueIdentifier>{1ca1e598-596a-40a8-b0ca-5177f183ac7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entry">
+      <UniqueIdentifier>{95fa516a-ea0c-461d-ac60-c873499a5bac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entry">
+      <UniqueIdentifier>{1dca320c-5fc2-474a-b416-ff934faf3f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{94b8166d-23ea-4fb0-94e1-59486799988c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{38fd3172-8880-4649-aaa4-f61c5d27f6ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exceptions">
+      <UniqueIdentifier>{5e5543fc-3c17-465a-a549-59edd09ac26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{99b8e750-ad8b-4f86-a301-63acc5abde45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Abstract Objects">
+      <UniqueIdentifier>{325e70e2-e108-4ae4-908a-a5e847c8221e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Implemented Objects">
+      <UniqueIdentifier>{b541b6c3-73ee-410a-8b76-86eda8755cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Implemented Objects">
+      <UniqueIdentifier>{52f07f0e-a2e5-4b29-8aa0-5856a51fc6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bibliographic\Base Classes">
+      <UniqueIdentifier>{1b129b09-406e-4845-9619-cd30d84acbfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bibliographic\Base Classes">
+      <UniqueIdentifier>{d0247341-93d7-46e9-a0cb-bbf77661b7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\User Interface">
+      <UniqueIdentifier>{b04991c3-f7c9-41d1-85e2-884b221226b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\User Interface">
+      <UniqueIdentifier>{9ab481f8-1bd9-48ea-af3e-d7203c24730d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PublicScholar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyValuePair.cpp">
+      <Filter>Source Files\Implemented Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Volume.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Issn.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Url.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Number.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Doi.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="UrlDate.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Author.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Journal.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Month.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Pages.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Year.cpp">
+      <Filter>Source Files\Bibliographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry.cpp">
+      <Filter>Source Files\Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryBuilder.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldBuilder.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Source Files\Implemented Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Bibliographic.cpp">
+      <Filter>Source Files\Bibliographic\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="BibliographicNumber.cpp">
+      <Filter>Source Files\Bibliographic\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="BibliographicString.cpp">
+      <Filter>Source Files\Bibliographic\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="BibliographicArray.cpp">
+      <Filter>Source Files\Bibliographic\Base Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryStore.cpp">
+      <Filter>Source Files\Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>Source Files\User Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="KeyValuePair.h">
+      <Filter>Header Files\Implemented Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Volume.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Issn.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Url.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Doi.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Number.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="UrlDate.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Journal.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Author.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Month.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Pages.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Year.h">
+      <Filter>Header Files\Bibliographic</Filter>
+    </ClInclude>
+    <ClInclude Include="Entry.h">
+      <Filter>Header Files\Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryBuilder.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldBuilder.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Header Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractArray.h">
+      <Filter>Header Files\Abstract Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Header Files\Implemented Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Header Files\Implemented Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractVector.h">
+      <Filter>Header Files\Abstract Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Bibliographic.h">
+      <Filter>Header Files\Bibliographic\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BibliographicNumber.h">
+      <Filter>Header Files\Bibliographic\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BibliographicArray.h">
+      <Filter>Header Files\Bibliographic\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="BibliographicString.h">
+      <Filter>Header Files\Bibliographic\Base Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files\Implemented Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Header Files\User Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryStore.h">
+      <Filter>Header Files\Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="BibliographicAbstract.h">
+      <Filter>Header Files\Abstract Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug\infile.bib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
+</Project>
