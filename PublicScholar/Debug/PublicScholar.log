@@ -1,35 +1,14 @@
-﻿Build started 10/1/2014 4:02:08 PM.
-     1>Project "D:\Projects\PublicScholar\PublicScholar\PublicScholar.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/16/2014 11:34:46 PM.
+     1>Project "D:\Projects\CS2413\PublicScholar\PublicScholar.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Programming\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\//" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Author.cpp Bibliographic.cpp BibliographicArray.cpp BibliographicNumber.cpp BibliographicString.cpp Doi.cpp Entry.cpp EntryBuilder.cpp EntryStore.cpp FieldBuilder.cpp Issn.cpp Journal.cpp Month.cpp Number.cpp Pages.cpp PublicScholar.cpp Title.cpp Url.cpp UrlDate.cpp UserInterface.cpp Volume.cpp Year.cpp
-         Year.cpp
-         Volume.cpp
-         UserInterface.cpp
-     1>d:\projects\publicscholar\publicscholar\userinterface.cpp(67): warning C4129: 'D' : unrecognized character escape sequence
-         UrlDate.cpp
-         Url.cpp
-         Title.cpp
-         PublicScholar.cpp
-         Pages.cpp
-         Number.cpp
-         Month.cpp
-         Journal.cpp
-         Issn.cpp
-         FieldBuilder.cpp
-         EntryStore.cpp
-         EntryBuilder.cpp
-         Entry.cpp
-         Doi.cpp
-         BibliographicString.cpp
-         BibliographicNumber.cpp
-         BibliographicArray.cpp
+         D:\Programming\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\//" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt LinkedList.cpp SortedLinkedList.cpp
+         LinkedList.cpp
          Generating Code...
          Compiling...
-         Bibliographic.cpp
-         Author.cpp
+         SortedLinkedList.cpp
          Generating Code...
        Link:
-         D:\Programming\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\PublicScholar\Debug\PublicScholar.exe" /INCREMENTAL /NOLOGO /WX:NO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\PublicScholar\Debug\PublicScholar.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\PublicScholar\Debug\PublicScholar.lib" /MACHINE:X86 Debug\//Author.obj
+         D:\Programming\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\CS2413\Debug\PublicScholar.exe" /INCREMENTAL /NOLOGO /WX:NO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\CS2413\Debug\PublicScholar.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\CS2413\Debug\PublicScholar.lib" /MACHINE:X86 Debug\//Author.obj
          Debug\//BibliographicArray.obj
          Debug\//BibliographicNumber.obj
          Debug\//BibliographicString.obj
@@ -41,11 +20,13 @@
          Debug\//Issn.obj
          Debug\//Journal.obj
          Debug\//KeyValuePair.obj
+         Debug\//LinkedList.obj
          Debug\//Month.obj
          Debug\//Number.obj
          Debug\//Pages.obj
          Debug\//PublicScholar.obj
          Debug\//Bibliographic.obj
+         Debug\//SortedLinkedList.obj
          Debug\//String.obj
          Debug\//Title.obj
          Debug\//Url.obj
@@ -53,9 +34,9 @@
          Debug\//UserInterface.obj
          Debug\//Volume.obj
          Debug\//Year.obj
-         PublicScholar.vcxproj -> D:\Projects\PublicScholar\Debug\PublicScholar.exe
-     1>Done Building Project "D:\Projects\PublicScholar\PublicScholar\PublicScholar.vcxproj" (Build target(s)).
+         PublicScholar.vcxproj -> D:\Projects\CS2413\Debug\PublicScholar.exe
+     1>Done Building Project "D:\Projects\CS2413\PublicScholar\PublicScholar.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:05.15
+Time Elapsed 00:00:00.73

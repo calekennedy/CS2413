@@ -94,11 +94,13 @@
     <ClCompile Include="KeyValuePair.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Month.cpp" />
     <ClCompile Include="Number.cpp" />
     <ClCompile Include="Pages.cpp" />
     <ClCompile Include="PublicScholar.cpp" />
     <ClCompile Include="Bibliographic.cpp" />
+    <ClCompile Include="SortedLinkedList.cpp" />
     <ClCompile Include="String.cpp" />
     <ClCompile Include="Title.cpp" />
     <ClCompile Include="Url.cpp" />
@@ -109,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractArray.h" />
+    <ClInclude Include="AbstractLinkedList.h" />
     <ClInclude Include="Array.h" />
     <ClInclude Include="Author.h" />
     <ClInclude Include="BibliographicAbstract.h" />
@@ -125,10 +128,12 @@
     <ClInclude Include="Issn.h" />
     <ClInclude Include="Journal.h" />
     <ClInclude Include="KeyValuePair.h" />
+    <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Month.h" />
     <ClInclude Include="Bibliographic.h" />
     <ClInclude Include="Number.h" />
     <ClInclude Include="Pages.h" />
+    <ClInclude Include="SortedLinkedList.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="Title.h" />
     <ClInclude Include="Url.h" />
