@@ -33,7 +33,10 @@ void Bibliographic::copy(const Bibliographic& b)
 
 Bibliographic::~Bibliographic()
 {
-
+	if (_keyValuePair != NULL) {
+		delete _keyValuePair;
+		_keyValuePair = NULL;
+	}	
 }
 
 String Bibliographic::getKey() const

@@ -128,11 +128,8 @@
     <ClCompile Include="UserInterface.cpp">
       <Filter>Source Files\User Interface</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList.cpp">
-      <Filter>Source Files\Implemented Objects</Filter>
-    </ClCompile>
-    <ClCompile Include="SortedLinkedList.cpp">
-      <Filter>Source Files\Implemented Objects</Filter>
+    <ClCompile Include="EntryStoreLL.cpp">
+      <Filter>Source Files\Entry</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -229,8 +226,8 @@
     <ClInclude Include="LinkedList.h">
       <Filter>Header Files\Implemented Objects</Filter>
     </ClInclude>
-    <ClInclude Include="SortedLinkedList.h">
-      <Filter>Header Files\Implemented Objects</Filter>
+    <ClInclude Include="EntryStoreLL.h">
+      <Filter>Header Files\Entry</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

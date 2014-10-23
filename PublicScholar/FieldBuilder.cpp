@@ -13,10 +13,11 @@ FieldBuilder::~FieldBuilder()
 Bibliographic FieldBuilder::buildField(const KeyValuePair& kvp)
 {
 	String key = kvp.getKey();
-	Bibliographic field = Bibliographic();
+	Bibliographic field = Bibliographic(kvp);
 
 	if (key == "author") {
-		field = Author();
+		field = (Author)field;
+		return field; 
 	}
 
 	else if (key == "doi") {

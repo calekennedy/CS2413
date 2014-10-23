@@ -25,6 +25,7 @@ UrlDate::UrlDate(const Bibliographic& b) :
 BibliographicString(b)
 {
 	(*_keyValuePair).setKey(_key);
+	(*_keyValuePair).setValue(b.getValue());
 }
 
 UrlDate::~UrlDate()

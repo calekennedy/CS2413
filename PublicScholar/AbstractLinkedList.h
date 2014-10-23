@@ -12,8 +12,9 @@ using namespace std;
 
 //exceptions used by inheritors of Linked List abstract class.
 class LinkedListException : public Exception {};
-class LinkedListMemoryException : public LinkedListException {};
-class LinkedListOutOfBoundsException : public LinkedListException {};
+class MemoryException : public LinkedListException {};
+class OutOfBoundsException : public LinkedListException {};
+class GetNullContentsException : public LinkedListException{};
 
 template <typename T>
 class AbstractLinkedList
@@ -38,9 +39,9 @@ public:
 	// adds a node after this one
 	virtual void append(const T& value) = 0;
 
-	virtual AbstractLinkedList<T> * find(const T& t);
+	virtual AbstractLinkedList<T> * find(const T& t) = 0;
 
 	// deletes this node from the list
-	virtual void remove() = 0; 
+	virtual T remove() = 0; 
 };
 

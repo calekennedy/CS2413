@@ -145,7 +145,7 @@ void EntryBuilder::buildFields()
 			}
 
 			KeyValuePair kvp = KeyValuePair(key, value);
-			(*_entry).addField(fieldBuilder.buildField(kvp));
+			(*_entry).addField(Bibliographic(kvp));
 		}
 	}
 }
@@ -154,6 +154,9 @@ void EntryBuilder::clearState()
 {
 	// chunk reset
 	_chunk = String();
+	if (_entry != NULL) {
+		delete _entry;
+	}
 	_entry = new Entry();
 }
 

@@ -85,14 +85,14 @@ Vector<T>::~Vector()
 template <typename T>
 void Vector<T>::operator= (const Vector<T>& v)
 {
-	Array<T>::copy(v);
+	copy(v);
 	_currSize = v._currSize;
 }
 
 template <typename T>
 void Vector<T>::operator= (const Array<T>& a)
 {
-	Array<T>::copy(a);
+	copy(a);
 	_currSize = a.size();
 }
 

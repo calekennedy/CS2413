@@ -37,6 +37,36 @@ Entry::~Entry()
 	_fields = NULL;
 }
 
+bool Entry::operator==(const String& name)
+{
+	return (*_name) == name;
+}
+
+bool Entry::operator==(const Entry& entry)
+{
+	return Entry::operator==((*entry._name));
+}
+
+bool Entry::operator< (const String& name)
+{
+	return (*_name) < name;
+}
+
+bool Entry::operator< (const Entry& entry)
+{
+	return Entry::operator<((*entry._name));
+}
+
+bool Entry::operator> (const String& name)
+{
+	return (*_name) > name;
+}
+
+bool Entry::operator> (const Entry& entry)
+{
+	return Entry::operator>((*entry._name));
+}
+
 String Entry::getChunk() const
 {
 	return (*_chunk);
@@ -131,32 +161,34 @@ void Entry::display()
 Bibliographic Entry::getField(const String& key)
 {
 	for (int i = 0; i < (*_fields).size(); i++) {
-		if ((*(*_fields)[i]).getKey() == key) {
+		String fieldName = (*(*_fields)[i]).getKey();
+		if (fieldName == key) {
 			return (*(*_fields)[i]);
 		}
 	}
-	return Bibliographic(); // return an empty field if we don't find it
+	throw FieldNotFound();
 }
 
 // call get field and cast it to the correct type.
-Author	Entry::getAuthor()	{ return getField("author");	}
-Doi		Entry::getDoi()		{ return getField("doi");		}
-Issn	Entry::getIssn()	{ return getField("issn");		}
-Journal Entry::getJournal() { return getField("journal");	}
-Month	Entry::getMonth()	{ return getField("month");		}
-Number	Entry::getNumber()	{ return getField("number");	}
-Pages	Entry::getPages()	{ return getField("pages");		}
-Title	Entry::getTitle()	{ return getField("title");		}
-Url		Entry::getUrl()		{ return getField("url");		}
-UrlDate Entry::getUrlDate() { return getField("urldate");	}
-Volume	Entry::getVolume()	{ return getField("volume");	}
-Year	Entry::getYear()	{ return getField("year");		}
+Author	Entry::getAuthor()	{ return getField(String("author"));	}
+Doi		Entry::getDoi()		{ return getField(String("doi"));		}
+Issn	Entry::getIssn()	{ return getField(String("issn"));		}
+Journal Entry::getJournal() { return getField(String("journal"));	}
+Month	Entry::getMonth()	{ return getField(String("month"));		}
+Number	Entry::getNumber()	{ return getField(String("number"));	}
+Pages	Entry::getPages()	{ return getField(String("pages"));		}
+Title	Entry::getTitle()	{ return getField(String("title"));		}
+Url		Entry::getUrl()		{ return getField(String("url"));		}
+UrlDate Entry::getUrlDate() { return getField(String("urldate"));	}
+Volume	Entry::getVolume()	{ return getField(String("volume"));	}
+Year	Entry::getYear()	{ return getField(String("year"));		}
 
 void Entry::displayCounts()
 {
 	cout << "\tcounts = {";
 	cout << "fields: " << numberOfFields();
-	cout << " authors: " << getAuthor().size();
+	try { cout << " authors: " << getAuthor().size(); }
+	catch (FieldNotFound) { cout << " authors: " << 0; }
 	cout << " longest field: " << longestFieldName();
 	cout << " length: " << longestFieldLength();
 	cout << "}" << endl;
@@ -164,21 +196,22 @@ void Entry::displayCounts()
 
 ostream& operator << (ostream& s, const Entry& e)
 {
-	Entry entry = Entry(e);
-	int size = entry.numberOfFields();
+	int size = (*e._fields).size();
 	s << "\n@";
-	s << entry.getType();
+	s << (*e._type);
 	s << '{';
-	s << entry.getName();
+	s << (*e._name);
 	s << "," << endl;
 	for (int i = 0; i < size; i++) {
-		s << entry.getFields()[i] << endl;
+		Bibliographic field = (*(*e._fields)[i]);
+		s << field << endl;
 	}
 	s << "\tcounts = {";
-	s << "fields: " << entry.numberOfFields();
-	s << " authors: " << entry.getAuthor().size();
-	s << " longest field: " << entry.longestFieldName();
-	s << " length: " << entry.longestFieldLength();
+	s << "fields: " << size;
+	try { s << " authors: " << ((Entry)e).getAuthor().size(); }
+	catch (FieldNotFound e) { s << " authors: " << 0; }	
+	s << " longest field: " << ((Entry)e).longestFieldName();
+	s << " length: " << ((Entry)e).longestFieldLength();
 	s << "}" << endl;
 	s << "}" << endl;
 	return s;

@@ -25,6 +25,7 @@ Author::Author(const Bibliographic& b) :
 BibliographicArray(b)
 {
 	(*_keyValuePair).setKey(_key);
+	(*_keyValuePair).setValue(b.getValue());
 }
 
 Author::~Author()

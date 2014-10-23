@@ -1,0 +1,60 @@
+﻿Build started 10/19/2014 8:29:26 PM.
+     1>Project "D:\Projects\CS2413\PublicScholar\PublicScholar.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Programming\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\PublicScholar.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Author.cpp BibliographicArray.cpp BibliographicNumber.cpp BibliographicString.cpp Doi.cpp Entry.cpp EntryBuilder.cpp EntryStore.cpp EntryStoreLL.cpp FieldBuilder.cpp Issn.cpp Journal.cpp KeyValuePair.cpp Month.cpp Number.cpp Pages.cpp PublicScholar.cpp Bibliographic.cpp String.cpp Title.cpp Url.cpp UrlDate.cpp UserInterface.cpp Volume.cpp Year.cpp
+         Author.cpp
+     1>Author.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         BibliographicArray.cpp
+     1>BibliographicArray.cpp(42): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         BibliographicNumber.cpp
+     1>BibliographicNumber.cpp(38): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         BibliographicString.cpp
+     1>BibliographicString.cpp(32): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Doi.cpp
+     1>Doi.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Entry.cpp
+     1>Entry.cpp(218): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         EntryBuilder.cpp
+     1>EntryBuilder.cpp(167): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         EntryStore.cpp
+     1>EntryStore.cpp(108): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         EntryStoreLL.cpp
+     1>EntryStoreLL.cpp(133): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         FieldBuilder.cpp
+     1>FieldBuilder.cpp(74): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Issn.cpp
+     1>Issn.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Journal.cpp
+     1>Journal.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         KeyValuePair.cpp
+     1>KeyValuePair.cpp(84): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Month.cpp
+     1>Month.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Number.cpp
+     1>Number.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Pages.cpp
+     1>Pages.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         PublicScholar.cpp
+     1>PublicScholar.cpp(14): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Bibliographic.cpp
+     1>Bibliographic.cpp(77): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         String.cpp
+     1>String.cpp(200): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Title.cpp
+     1>Title.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Compiling...
+         Url.cpp
+     1>Url.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         UrlDate.cpp
+     1>UrlDate.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         UserInterface.cpp
+     1>UserInterface.cpp(204): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Volume.cpp
+     1>Volume.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Year.cpp
+     1>Year.cpp(33): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+     1>Done Building Project "D:\Projects\CS2413\PublicScholar\PublicScholar.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.25

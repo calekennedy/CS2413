@@ -128,7 +128,7 @@ String String::substring(int left, int len) const
 	return sub;
 }
 
-Array<String> String::split(const String& s) const
+Vector<String> String::split(const String& s) const
 {
 	Vector<String> v = Vector<String>();
 	int left = 0;

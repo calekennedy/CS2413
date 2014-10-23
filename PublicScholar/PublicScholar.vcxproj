@@ -88,19 +88,18 @@
     <ClCompile Include="Entry.cpp" />
     <ClCompile Include="EntryBuilder.cpp" />
     <ClCompile Include="EntryStore.cpp" />
+    <ClCompile Include="EntryStoreLL.cpp" />
     <ClCompile Include="FieldBuilder.cpp" />
     <ClCompile Include="Issn.cpp" />
     <ClCompile Include="Journal.cpp" />
     <ClCompile Include="KeyValuePair.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Month.cpp" />
     <ClCompile Include="Number.cpp" />
     <ClCompile Include="Pages.cpp" />
     <ClCompile Include="PublicScholar.cpp" />
     <ClCompile Include="Bibliographic.cpp" />
-    <ClCompile Include="SortedLinkedList.cpp" />
     <ClCompile Include="String.cpp" />
     <ClCompile Include="Title.cpp" />
     <ClCompile Include="Url.cpp" />
@@ -122,6 +121,7 @@
     <ClInclude Include="Entry.h" />
     <ClInclude Include="EntryBuilder.h" />
     <ClInclude Include="EntryStore.h" />
+    <ClInclude Include="EntryStoreLL.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="FieldBuilder.h" />
     <ClInclude Include="AbstractVector.h" />
@@ -133,7 +133,6 @@
     <ClInclude Include="Bibliographic.h" />
     <ClInclude Include="Number.h" />
     <ClInclude Include="Pages.h" />
-    <ClInclude Include="SortedLinkedList.h" />
     <ClInclude Include="String.h" />
     <ClInclude Include="Title.h" />
     <ClInclude Include="Url.h" />

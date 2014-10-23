@@ -53,7 +53,7 @@ public:
 	virtual String substring(int left, int len) const;
 
 	// splits the string into an array of strings
-	virtual Array<String> split(const String& s) const;
+	virtual Vector<String> split(const String& s) const;
 	// casts the value of the string as an integer
 	virtual int toInt() const;
 

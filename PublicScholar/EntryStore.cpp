@@ -2,7 +2,7 @@
 
 EntryStore::EntryStore() 
 {
-	_entries = new Vector <Entry*>();
+	_entries = new Vector<Entry*>();
 };
 
 EntryStore::~EntryStore()

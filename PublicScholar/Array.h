@@ -29,7 +29,7 @@ public:
 	Array(const Array<T>& a);
 
 	// destructor 
-	~Array();
+	virtual ~Array();
 
 	// class methods
 	int size() const;
@@ -81,7 +81,7 @@ template <typename T>
 Array<T>::~Array()
 {
 	if (paObject != NULL) {
-		delete[] paObject;
+		delete [] paObject;
 	}
 	paObject = NULL;
 	_size = 0;

@@ -25,6 +25,7 @@ Year::Year(const Bibliographic& b) :
 BibliographicNumber(b)
 {
 	(*_keyValuePair).setKey(_key);
+	(*_keyValuePair).setValue(b.getValue());
 }
 
 Year::~Year()

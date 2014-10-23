@@ -2,7 +2,7 @@
 
 UserInterface::UserInterface()
 {
-	_entryStore = new EntryStore();
+	_entryStore = new EntryStoreLL();
 	_userInput = new String();
 }
 
@@ -22,6 +22,7 @@ void UserInterface::getUserInput()
 	cin >> input;
 	delete _userInput;
 	_userInput = new String(input);
+	delete input;
 };
 
 // read file into data store
@@ -45,7 +46,7 @@ void UserInterface::search()
 		entry.display();
 		cout << endl << endl;
 	}
-	catch (ArrayBoundsException e) {
+	catch (EntryNotFoundException e) {
 		cout << "\nNo entry was found with that name.\n";
 		cout << endl << endl;
 		return;
@@ -64,8 +65,8 @@ void UserInterface::remove()
 		cout << "\nDo you wish to delete this entry? (Y/N)\n";
 		getUserInput();
 		if ((*_userInput).equalsIgnoreCase("Y")) {
-			cout << "\Deleting " << entry.getName() << "...";
-			(*_entryStore).removeEntry(entry.getName());
+			cout << "\nDeleting " << entry.getName() << "...";
+			_entryStore->removeEntry(entry);
 			cout << "\nEntry Deleted.";
 			cout << endl << endl;
 		}
@@ -75,14 +76,14 @@ void UserInterface::remove()
 			return;
 		}
 	}
-	catch (ArrayBoundsException e) {
+	catch (EntryNotFoundException e) {
 		cout << "\nNo entry was found with that name.\n";
 		cout << endl << endl;
 		return;
 	}
 }
 
-// print - (P)
+// write - (W)
 void UserInterface::print() 
 {
 	cout << "\nEnter the filename to which we will write (press ENTER to output to console).\n>";
@@ -100,10 +101,10 @@ void UserInterface::print()
 		}
 	}
 	if (userInput[0] == '\0') {
-		Vector<Entry*> entries = (*_entryStore).getEntries();
-		int size = entries.size();
+		LinkedList<Entry> * entries = (*_entryStore).getEntries();
+		int size = entries->length();
 		for (int i = 0; i < size; i++) {
-			(*entries[i]).display();
+			(*entries)[i].display();
 		}
 		cout << endl << endl;
 	}
@@ -117,6 +118,57 @@ void UserInterface::print()
 	}
 }
 
+// merge - (M)
+void UserInterface::merge()
+{
+	// read file into a store
+	cout << "\nEnter the filename from which we will merge.\n>";
+	getUserInput();
+	cout << "\n loading...";
+	EntryStoreLL temp = EntryStoreLL();
+	temp.loadFromFile((*_userInput));
+	cout << "\n " << temp.numberOfEntries() << " entries were loaded from merge file.\n\n";
+	LinkedList<Entry> * node = temp.getEntries();
+	while (node != NULL) {
+		try {
+			_entryStore->addEntry(node->remove());
+		}
+		catch (OutOfBoundsException e) {
+			break;
+		}
+	}
+	cout << "\n " << (*_entryStore).numberOfEntries() << " entries in entry store after merge.\n\n";
+}
+
+// purge - (P)
+void UserInterface::purge()
+{
+	// read file into a store
+	if (_entryStore->numberOfEntries() == 0) {
+		cout << "\nNothing to purge." << endl;
+		return;
+	}
+	cout << "\nEnter the filename from which we will purge.\n>";
+	getUserInput();
+	cout << "\n loading...";
+	EntryStoreLL temp = EntryStoreLL();
+	temp.loadFromFile((*_userInput));
+	cout << "\n " << temp.numberOfEntries() << " entries were loaded from purge file.\n\n";
+	LinkedList<Entry> * node = temp.getEntries();
+	while (node != NULL) {
+		try {
+			_entryStore->removeEntry(node->remove());
+		}
+		catch (OutOfBoundsException e) {
+			break;
+		}
+		catch (EntryNotFoundException e) {
+			continue;
+		}
+	}
+	cout << "\n " << (*_entryStore).numberOfEntries() << " entries in entry store after purge.\n\n";
+}
+
 
 // this will load the user interface and return once the user exits.
 void UserInterface::run() {
@@ -126,7 +178,7 @@ void UserInterface::run() {
 	while (!exit) {
 		cout << "--------------------------------------------------------------------------------";
 		cout << "\nPlease choose from one of the following options.\n";
-		cout << "(S) Search, (D) Delete, (P) Print, (E) Exit\n";
+		cout << "(S) Search, (D) Delete, (W) Write, (M) Merge, (P) Purge, (E) Exit\n";
 		getUserInput();
 		String input = (*_userInput);
 		if (input.equalsIgnoreCase("E")) {
@@ -135,11 +187,17 @@ void UserInterface::run() {
 		else if (input.equalsIgnoreCase("S")) {
 			search();
 		}
-		else if (input.equalsIgnoreCase("P")) {
+		else if (input.equalsIgnoreCase("W")) {
 			print();
 		}
 		else if (input.equalsIgnoreCase("D")) {
 			remove();
+		}
+		else if (input.equalsIgnoreCase("M")) {
+			merge();
+		}
+		else if (input.equalsIgnoreCase("P")) {
+			purge();
 		}
 		else {
 			cout << "\nChoice not supported. Please choose from one of the supported options. \n";		

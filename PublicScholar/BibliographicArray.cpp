@@ -35,7 +35,7 @@ int BibliographicArray::size()
 	return getValueAsArray().size();
 }
 
-Array<String> BibliographicArray::getValueAsArray() const
+Vector<String> BibliographicArray::getValueAsArray() const
 {
 	return (*_keyValuePair).getValue().split(" and ");
 }

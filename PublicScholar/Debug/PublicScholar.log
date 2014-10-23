@@ -1,13 +1,6 @@
-﻿Build started 10/16/2014 11:34:46 PM.
+﻿Build started 10/22/2014 9:44:07 PM.
      1>Project "D:\Projects\CS2413\PublicScholar\PublicScholar.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         D:\Programming\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\//" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt LinkedList.cpp SortedLinkedList.cpp
-         LinkedList.cpp
-         Generating Code...
-         Compiling...
-         SortedLinkedList.cpp
-         Generating Code...
-       Link:
+     1>Link:
          D:\Programming\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\CS2413\Debug\PublicScholar.exe" /INCREMENTAL /NOLOGO /WX:NO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\CS2413\Debug\PublicScholar.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\CS2413\Debug\PublicScholar.lib" /MACHINE:X86 Debug\//Author.obj
          Debug\//BibliographicArray.obj
          Debug\//BibliographicNumber.obj
@@ -16,17 +9,16 @@
          Debug\//Entry.obj
          Debug\//EntryBuilder.obj
          Debug\//EntryStore.obj
+         Debug\//EntryStoreLL.obj
          Debug\//FieldBuilder.obj
          Debug\//Issn.obj
          Debug\//Journal.obj
          Debug\//KeyValuePair.obj
-         Debug\//LinkedList.obj
          Debug\//Month.obj
          Debug\//Number.obj
          Debug\//Pages.obj
          Debug\//PublicScholar.obj
          Debug\//Bibliographic.obj
-         Debug\//SortedLinkedList.obj
          Debug\//String.obj
          Debug\//Title.obj
          Debug\//Url.obj
@@ -39,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.73
+Time Elapsed 00:00:00.19

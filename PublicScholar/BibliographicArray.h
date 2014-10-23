@@ -24,6 +24,6 @@ public:
 	// override
 	virtual int size();
 	// new method
-	virtual Array<String> getValueAsArray() const;
+	virtual Vector<String> getValueAsArray() const;
 };
 

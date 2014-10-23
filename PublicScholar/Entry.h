@@ -15,6 +15,10 @@
 #include "Volume.h"
 #include "Year.h"
 
+#include "Exception.h"
+class EntryException : Exception {};
+class FieldNotFound : EntryException {};
+
 class Entry
 {
 friend ostream& operator << (ostream& s, const Entry& e);
@@ -39,6 +43,17 @@ public:
 	Entry();
 	Entry(const Entry& e);
 	virtual ~Entry();
+
+	virtual bool operator== (const String& name);
+	virtual bool operator== (const Entry& entry);
+
+	virtual bool operator< (const String& name);
+	virtual bool operator< (const Entry& entry);
+
+	virtual bool operator> (const String& name);
+	virtual bool operator> (const Entry& entry);
+
+	
 
 	// accessors
 	virtual String getChunk() const;
