@@ -66,7 +66,7 @@ If any thing is broken in these data structures, it is likely my fault (due to a
 
 #### Additional Comments
 
-I kept getting linker errors for all primitive, inherited data-structure classes.
+I kept getting linker errors for all primitive, inherited (non-atomic) data-structure classes.
 They were all previously split into .cpp and .h files.
 This seems to have been the source of the linker errors.
 Now, these objects have their entire class body in their respective header files. 
