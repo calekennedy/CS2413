@@ -60,7 +60,7 @@ All of my code uses the [single responsibility principle](http://en.wikipedia.or
 
 ## Credits and Thanks
 
-Many of the objects and classes in this project are either directly copied from, or were heavily influenced by the lecture slides in Dr. Hougen's Data Structure Course and/or Dr. Radhakrishnan's book on Data Structures. For this reason, much of the credit for the underlying data structures libraries should go to them.
+Many of the objects and classes in this project are either directly copied from, or were heavily influenced by the lecture slides in Dr. Hougen's Data Structures course and/or Dr. Radhakrishnan's book on Data Structures. For this reason, much of the credit for the underlying data structures libraries should go to them.
 
 Non-Exhaustive list of objects and classes with some or all credit due to the above persons: Abstract Array, Abstract Vector, Vector, Array, String, and Linked List.
 
