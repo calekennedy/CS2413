@@ -58,8 +58,7 @@ Many of the objects and classes in this project are either directly copied from,
 
 Non-Exhaustive list of objects and classes with some or all credit due to the above persons: Abstract Array, Abstract Vector, Vector, Array, String, and Linked List.
 
-I also used wikipedia for the specifications of the 
-[Linked List Abstract Data Type](http://en.wikipedia.org/wiki/List_(abstract_data_type).
+I also used wikipedia for the specifications of the [Linked List Abstract Data Type](http://en.wikipedia.org/wiki/List_(abstract_data_type)).
 
 If any thing is broken in these data structures, it is likely my fault (due to adapting them to fit the specific needs of my program) and should not reflect poorly on the original authors.
 
