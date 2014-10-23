@@ -1,5 +1,7 @@
 # CS 2413 - Intro to Data Structures 
 
+![Image of OU CS Banner](http://i.imgur.com/hjatGGJ.png)
+
 VS2013 or newer is required to run this project (blame academia).
 
 ---
