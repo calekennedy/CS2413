@@ -13,7 +13,7 @@ or at the very least give you a template to work against. However, if you are at
 
 #### Academic Misconduct charges may be brought against any student who fails to properly credit their sources.
 #### Many penalties are possible when a student is found guilty of an act of academic misconduct, including expulsion.
-#### Please do not jeopardize your academic career.
+#### Please do not jeopardize your academic career; cite your sources.
 
 [University of Oklahoma academic integrity information](http://integrity.ou.edu/)
 
