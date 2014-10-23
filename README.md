@@ -9,7 +9,7 @@ VS2013 or newer is required to run this project (blame academia).
 ## Administrative Remark 
 
 If you are a student at the University of Oklahoma (or any other university), please feel free to use the code in this repo. I do not care what you do with it. Hopefully it will help you better understand data structures and C++,
-or at the very least give you a template to work against. However, if you are attending the University of Oklahoma, you must (and I cannot stress this enough) credit this source. I am not being self-interested, failure to provide credit is considered academic misconduct.
+or at the very least give you a template to work against. However, if you are attending the University of Oklahoma, you must (and I cannot stress this enough) credit this source. I am not being self-interested -- failure to provide credit is considered academic misconduct.
 
 #### Academic Misconduct charges may be brought against any student who fails to properly credit their sources.
 #### Many penalties are possible when a student is found guilty of an act of academic misconduct, including expulsion.
