@@ -18,7 +18,7 @@ or at the very least give you a template to work against. However, if you are at
 > "You may write your program from scratch or may start from programs for which the source code is 
 freely available on the web or through other sources... you must give a complete and accurate accounting of where all of your code came from and indicate which parts are original or changed, and which you got from which other source. 
 Failure to give credit where credit is due is academic fraud and will be dealt with accordingly."
-> Dr. Hougen
+> - Dr. Hougen
 
 [University of Oklahoma academic integrity information](http://integrity.ou.edu/)
 
