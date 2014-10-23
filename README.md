@@ -52,7 +52,7 @@ All of my code uses the [single responsibility principle](http://en.wikipedia.or
 
 ---
 
-CREDIT:
+## Credits and Thanks
 
 Many of the objects and classes in this project are either directly copied from, or were heavily influenced by the lecture slides in Dr. Hougen's Data Structure Course and/or Dr. Radhakrishnan's book on Data Structures. For this reason, much of the credit for the underlying data structures libraries should go to them.
 
