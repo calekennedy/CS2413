@@ -1,3 +1,21 @@
+#### Administrative Remark ####
+If you are a student at the University of Oklahoma (or any other university),
+please feel free to use the code in this repo.
+I do not care what you do with it.
+Hopefully it will help you better understand the subject matter in the course,
+or at the very least give you a template to work against.
+However, you must (and I cannot stress this enough) credit this source.
+I am not being self-interested when I say this.
+Failure to credit me for any of the code you use is considered academic misconduct,
+and may carry a penalty of expulsion. 
+[OU academic misconduct information](http://integrity.ou.edu/)
+
+As always, keep coding. :)
+
+
+---
+
+
 This solution should come ready to roll.
 
 You can run this project using the "Local Windows Debugger"
